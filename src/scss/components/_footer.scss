@@ -1,0 +1,118 @@
+.footer__container {
+  background-color: $color--main;
+  margin-top: 3rem;
+  transform: skewX(-4deg);
+}
+
+.article__box {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.footer__article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  a:hover {
+    min-width: 100%;
+    min-height: 10px;
+    padding: 0;
+    color: black;
+    background-color: $color--body;
+    border-radius: 4px;
+  }
+
+}
+
+.contact__address {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.footer__mediaList {
+  display: flex;
+  gap: 0.6rem;
+  padding-bottom: 1rem;
+
+  a:hover {
+    padding: .5rem 0.4rem .5rem 0.4rem;
+    color: $color--body;
+    background-color: $color--accent;
+    border-radius: 50%
+  }
+}
+
+.footer__additionalInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.3rem;
+
+}
+
+.adInfo__list {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 9rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: $color--body;
+
+}
+
+.footer__title {
+  font-family: $font--title;
+  color: black;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+@media (max-width: 1100px) and (min-width: 801px) {
+
+  .article__box {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .adInfo__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .footer__article a {
+    font-size: 1.3rem;
+
+    a:hover {
+      padding: .5rem 0.4rem .5rem 0.4rem;
+      color: $color--body;
+      background-color: $color--accent;
+      border-radius: 50%
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__container {
+    margin-top: 2rem;
+  }
+
+  .footer__article a {
+    font-size: 1.3rem;
+  }
+
+  .article__box {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+  .adInfo__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+}

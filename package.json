@@ -1,0 +1,17 @@
+{
+  "name": "project__fsw",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel --no-cache",
+    "build": "parcel build"
+  },
+  "dependencies": {
+    "parcel": "^2.11.0",
+    "sass": "^1.72.0"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.11.0"
+  }
+}

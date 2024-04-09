@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+  list-style: none;
+}
+
+body {
+  background-color: $color--body;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 18px;
+}
+
+
+.btn {
+  width: 11.3rem;
+  height: 60px;
+  font-family: $font--text;
+  color: white;
+  font-weight: 600;
+  background-color: $color--additional;
+  border: none;
+  border-radius: 24px;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+a {
+  font-family: $font--option;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: $color--body
+}
+
+.title {
+  font-family: $font--title;
+  font-weight: bold;
+  font-size: 1.4rem;
+  letter-spacing: 1px;
+  color: $color--title;
+  padding: 1rem;
+}
+
+p {
+  font-family: $font--option;
+  padding: 1.2rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    width: 100%;
+  }
+
+
+}

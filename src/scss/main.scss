@@ -1,0 +1,16 @@
+/* Settings */
+@import "settings/_variable.scss";
+@import "settings/_mixins.scss";
+
+/* Generic */
+@import "generic/reset";
+
+/* Components */
+@import "components/_base.scss";
+@import "components/_header.scss";
+@import "components/_banner.scss";
+@import "components/sectionFirst";
+@import "components/sectionSecond";
+@import "components/_footer.scss";
+
+

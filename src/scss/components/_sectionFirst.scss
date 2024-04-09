@@ -1,0 +1,46 @@
+.main__container {
+  background-color: $color--secondary;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1rem;
+  transform: skewX(4deg);
+  padding: 2.8rem;
+}
+
+.main__article {
+  img {
+    height: 60%;
+    border-radius: 20%;
+    padding: 30px;
+  }
+
+  .article__title {
+    color: $color--accent;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+
+  .article__subtitle {
+    padding: 0 1rem 0 1rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .main__container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .article__content p {
+    text-overflow: ellipsis;
+  }
+  .main__article {
+    padding: 2rem 0 0 3.5rem;
+  }
+
+}
